@@ -22,7 +22,7 @@ public class Servlet2 extends HttpServlet {
         Integer c;
         Integer a = Integer.valueOf(request.getParameter("a"));
         Integer b = Integer.valueOf(request.getParameter("b"));
-        c = a + b+b;
+        c = a + a + b + b;
         request.setAttribute("c",c);
         this.getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
         }
